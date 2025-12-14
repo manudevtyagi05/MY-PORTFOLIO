@@ -8,6 +8,7 @@ interface ComicButtonProps {
   href?: string;
   onClick?: () => void;
   icon?: ReactNode;
+  download?: boolean;
 }
 
 export const ComicButton = ({
@@ -17,6 +18,7 @@ export const ComicButton = ({
   href,
   onClick,
   icon,
+  download,
 }: ComicButtonProps) => {
   const variants = {
     primary: "comic-button-primary",
@@ -38,6 +40,7 @@ export const ComicButton = ({
         href={href}
         target={href.startsWith("http") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+        download={download}
         className={cn(
           variants[variant],
           "inline-flex items-center justify-center",
