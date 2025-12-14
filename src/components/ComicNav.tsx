@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Code2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
   { label: "Origin", href: "#about" },
@@ -37,16 +38,22 @@ export const ComicNav = () => {
                 {link.label}
               </a>
             ))}
+            <div className="ml-2">
+              <ThemeToggle />
+            </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 border-2 border-foreground bg-card"
-            style={{ boxShadow: "2px 2px 0px hsl(var(--comic-ink))" }}
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Controls */}
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 border-2 border-foreground bg-card"
+              style={{ boxShadow: "2px 2px 0px hsl(var(--comic-ink))" }}
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Nav */}
