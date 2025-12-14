@@ -76,8 +76,9 @@ export const ContactSection = () => {
             </p>
             <ComicButton
               variant="accent"
-              href="#"
+              href="/Manu_Dev_Tyagi_Resume.pdf"
               icon={<Download className="w-5 h-5" />}
+              download
             >
               Download Resume
             </ComicButton>
