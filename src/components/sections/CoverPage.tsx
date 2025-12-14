@@ -1,10 +1,8 @@
 import { ComicPanel, CaptionBox, ActionLabel } from "@/components/ComicPanel";
 import { ComicButton } from "@/components/ComicButton";
-import { ChevronDown, Code2, Server, Database } from "lucide-react";
-
+import { Code2, Server, Database } from "lucide-react";
 export const CoverPage = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center py-8 px-4 relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center py-8 px-4 relative overflow-hidden">
       {/* Background halftone effect */}
       <div className="absolute inset-0 halftone" />
       
@@ -59,7 +57,9 @@ export const CoverPage = () => {
 
             {/* Description in caption box style */}
             <div className="max-w-2xl mx-auto">
-              <div className="bg-accent/20 border-3 border-foreground p-4 md:p-6 mt-6" style={{ boxShadow: "3px 3px 0px hsl(var(--comic-ink))" }}>
+              <div className="bg-accent/20 border-3 border-foreground p-4 md:p-6 mt-6" style={{
+              boxShadow: "3px 3px 0px hsl(var(--comic-ink))"
+            }}>
                 <p className="font-body text-lg md:text-xl text-foreground italic">
                   "Building scalable systems, one API at a time."
                 </p>
@@ -79,10 +79,9 @@ export const CoverPage = () => {
 
           {/* Scroll indicator */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-foreground" />
+            
           </div>
         </ComicPanel>
       </div>
-    </section>
-  );
+    </section>;
 };
