@@ -1,96 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Work+Sans:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Comic Paper Background */
+    --background: 45 30% 96%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card/Panel backgrounds */
+    --card: 45 25% 98%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 25% 98%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Action Red - Primary */
+    --primary: 0 85% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Hero Blue - Secondary */
+    --secondary: 210 90% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* POW Yellow - Accent */
+    --accent: 45 95% 55%;
+    --accent-foreground: 0 0% 8%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted tones */
+    --muted: 45 20% 90%;
+    --muted-foreground: 0 0% 40%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Comic ink borders */
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 210 90% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom Comic Variables */
+    --comic-ink: 0 0% 8%;
+    --comic-paper: 45 30% 96%;
+    --comic-yellow: 45 95% 55%;
+    --comic-red: 0 85% 50%;
+    --comic-blue: 210 90% 50%;
+    --comic-green: 150 70% 40%;
+    
+    /* Halftone pattern */
+    --halftone-opacity: 0.03;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Panel shadows */
+    --panel-shadow: 4px 4px 0px hsl(var(--comic-ink));
+    --panel-shadow-lg: 8px 8px 0px hsl(var(--comic-ink));
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Fonts */
+    --font-comic: 'Bangers', cursive;
+    --font-body: 'Work Sans', sans-serif;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 0 0% 8%;
+    --foreground: 45 30% 96%;
+    --card: 0 0% 12%;
+    --card-foreground: 45 30% 96%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 45 30% 96%;
+    --primary: 0 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 90% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 45 95% 55%;
+    --accent-foreground: 0 0% 8%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 45 20% 70%;
+    --border: 45 20% 80%;
+    --input: 45 20% 80%;
+    --ring: 210 90% 55%;
   }
 }
 
@@ -100,6 +90,208 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+    font-family: var(--font-body);
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-comic);
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  /* Comic Panel Base */
+  .comic-panel {
+    @apply relative bg-card border-4 border-foreground;
+    box-shadow: var(--panel-shadow);
+  }
+
+  .comic-panel-lg {
+    @apply relative bg-card border-[6px] border-foreground;
+    box-shadow: var(--panel-shadow-lg);
+  }
+
+  /* Speech Bubble */
+  .speech-bubble {
+    @apply relative bg-card border-3 border-foreground rounded-2xl px-4 py-3;
+    box-shadow: 2px 2px 0px hsl(var(--comic-ink));
+  }
+
+  .speech-bubble::after {
+    content: '';
+    @apply absolute -bottom-4 left-8 w-0 h-0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid hsl(var(--foreground));
+  }
+
+  .speech-bubble::before {
+    content: '';
+    @apply absolute -bottom-2 left-9 w-0 h-0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 14px solid hsl(var(--card));
+    z-index: 1;
+  }
+
+  /* Caption Box */
+  .caption-box {
+    @apply bg-accent text-accent-foreground border-3 border-foreground px-4 py-2 font-comic;
+    box-shadow: 2px 2px 0px hsl(var(--comic-ink));
+  }
+
+  /* Action Label (POW!, BUILD!, etc) */
+  .action-label {
+    @apply inline-block font-comic text-xl md:text-2xl px-3 py-1 transform -rotate-3;
+    text-shadow: 2px 2px 0px hsl(var(--comic-ink));
+  }
+
+  .action-label-yellow {
+    @apply action-label bg-accent text-accent-foreground border-3 border-foreground;
+  }
+
+  .action-label-red {
+    @apply action-label bg-primary text-primary-foreground border-3 border-foreground;
+  }
+
+  .action-label-blue {
+    @apply action-label bg-secondary text-secondary-foreground border-3 border-foreground;
+  }
+
+  /* Halftone Overlay */
+  .halftone {
+    position: relative;
+  }
+
+  .halftone::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, hsl(var(--comic-ink)) 1px, transparent 1px);
+    background-size: 4px 4px;
+    opacity: var(--halftone-opacity);
+    pointer-events: none;
+  }
+
+  /* Comic Button */
+  .comic-button {
+    @apply relative font-comic text-lg md:text-xl px-6 py-3 border-4 border-foreground uppercase tracking-wide transition-all duration-150;
+    box-shadow: var(--panel-shadow);
+  }
+
+  .comic-button:hover {
+    @apply translate-x-1 translate-y-1;
+    box-shadow: 2px 2px 0px hsl(var(--comic-ink));
+  }
+
+  .comic-button:active {
+    @apply translate-x-1 translate-y-1;
+    box-shadow: none;
+  }
+
+  .comic-button-primary {
+    @apply comic-button bg-primary text-primary-foreground;
+  }
+
+  .comic-button-secondary {
+    @apply comic-button bg-secondary text-secondary-foreground;
+  }
+
+  .comic-button-accent {
+    @apply comic-button bg-accent text-accent-foreground;
+  }
+
+  .comic-button-outline {
+    @apply comic-button bg-card text-foreground;
+  }
+
+  /* Skill Badge */
+  .skill-badge {
+    @apply inline-block font-body font-semibold text-sm px-3 py-1.5 border-2 border-foreground bg-card;
+    box-shadow: 2px 2px 0px hsl(var(--comic-ink));
+  }
+
+  /* Timeline connector */
+  .timeline-dot {
+    @apply w-4 h-4 rounded-full border-3 border-foreground bg-primary;
+    box-shadow: 2px 2px 0px hsl(var(--comic-ink));
+  }
+
+  /* Page divider */
+  .comic-divider {
+    @apply w-full h-2 bg-foreground my-8;
+  }
+}
+
+@layer utilities {
+  .font-comic {
+    font-family: var(--font-comic);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-shadow-comic {
+    text-shadow: 3px 3px 0px hsl(var(--comic-ink));
+  }
+
+  .text-shadow-comic-sm {
+    text-shadow: 2px 2px 0px hsl(var(--comic-ink));
+  }
+
+  .border-3 {
+    border-width: 3px;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Animation keyframes */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+  }
+
+  @keyframes pop-in {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes slide-up {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-shake {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+
+  .animate-pop-in {
+    animation: pop-in 0.4s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out forwards;
+  }
+
+  /* Staggered animations */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
 }
