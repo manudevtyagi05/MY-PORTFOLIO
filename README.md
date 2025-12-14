@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# Manu Dev Tyagi — Java Backend Developer
 
-## Project info
+Sikar, Rajasthan | 7062057680 | manudevtyagi1213@gmail.com
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+LinkedIn | GitHub
 
-## How can I edit this code?
+## Professional Summary
 
-There are several ways of editing your application.
+Java Backend Developer with hands-on experience building scalable, high-performance RESTful APIs using Java, Spring Boot, Hibernate, and MySQL. Strong focus on clean architecture, system reliability, API design, security, and performance optimization in product-driven environments.
 
-**Use Lovable**
+## Technical Skills
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- Programming Languages: Java, Python, TypeScript, SQL
+- Data Structures & Algorithms: Problem solving
+- Computer Fundamentals: Operating Systems, DBMS, Computer Networking, Design Patterns, OOP
+- Tools & Technologies: Git, GitHub, Postman, MySQL, MongoDB, Spring Boot, RESTful APIs, Unit Testing, Troubleshooting
+- Soft Skills: Leadership, Communication
 
-Changes made via Lovable will be committed automatically to this repo.
+## Professional Experience
 
-**Use your preferred IDE**
+**ARCKAI — Software Engineer** | Gurugram | Jul 2025 – Oct 2025
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Backend development using Java, Spring Boot, and MySQL for EHR product modules (patient, order, reports).
+- Contributed to React.js dashboard development using TypeScript.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**SabPaisa (SRS Live Technologies Pvt. Ltd.) — Tech Intern** | Remote | Apr 2025 – Jun 2025
 
-Follow these steps:
+- Built RESTful APIs using Spring Boot & JPA with DTO mapping and global exception handling.
+- Worked on layered architecture, Swagger, and API validation.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Projects
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Team Engagement Platform – Backend** (GitHub)
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Developed a scalable backend supporting team communication and engagement features such as real-time chat, rewards, badges, kudos, and surveys.
+- Implemented secure REST APIs, role-based access, and modular architecture to manage users, teams, and engagement workflows.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**Blog Management System – Backend** (GitHub)
 
-**Edit a file directly in GitHub**
+- Built a backend application for blog creation, editing, and content management using a clean layered architecture.
+- Implemented REST APIs with validation, exception handling, and API documentation for maintainability and reliability.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Education
 
-**Use GitHub Codespaces**
+Bachelor of Technology (B.Tech) — Computer Science Engineering
+University College of Engineering & Technology, BTU Bikaner, Rajasthan
+Graduated: June 2025
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+If you'd like, I can add direct LinkedIn/GitHub links, a downloadable resume, or a short portfolio website section next.
